@@ -79,7 +79,6 @@ module.exports = function(app) {
 		let options = {
 			method:'POST',
 			url:req.session.extendURL +'saveLead',
-			headers:{'Authorization':`Bearer ${req.session.token}`},
 			json:data
 		};
 

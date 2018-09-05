@@ -2,6 +2,8 @@ const rp = require('request-promise');
 
 const extend_host = 'https://sandbox.auth0-extend.com';
 const extend_token = '';
+//this will end in either -0 or -1
+const extend_tenant = '';
 
 let options = {
 	uri:`${extend_host}/api/tokens/issue`,
@@ -10,7 +12,7 @@ let options = {
 		'Authorization':`Bearer ${extend_token}`
 	},
 	body:{
-		ten:'ext-41ebeec89d9dae2f144330c9890b298f-1'
+		ten:extend_tenant
 	},
 	json:true
 };
